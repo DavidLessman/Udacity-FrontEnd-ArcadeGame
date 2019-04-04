@@ -1,3 +1,22 @@
 body {
     text-align: center;
 }
+
+.score-panel {
+    align-self: center;
+    text-align: center;
+    width: 505px;
+}
+
+    .score-panel li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .score-panel img{
+        margin:0;
+        padding:0;
+        max-height: 100px;
+        max-width: 100px;
+    }
