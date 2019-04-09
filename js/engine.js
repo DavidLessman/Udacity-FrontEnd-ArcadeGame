@@ -90,9 +90,27 @@ var Engine = (function(global) {
      * render methods.
      */
     function updateEntities(dt) {
-        allEnemies.forEach(function(enemy) {
-            enemy.update(dt);
-        });
+        if (score < 1) {
+            for (i = 0; i < 3; i++) {
+                allEnemies[i].update(dt);
+            };
+        } else if (score < 2) {
+            for (i = 0; i < 4; i++) {
+                allEnemies[i].update(dt);
+            };
+        } else if (score < 3) {
+            for (i = 0; i < 5; i++) {
+                allEnemies[i].update(dt);
+            };
+        } else if (score < 4) {
+            for (i = 0; i < 7; i++) {
+                allEnemies[i].update(dt);
+            };
+        } else {
+            allEnemies.forEach(function (enemy) {
+                enemy.update(dt);
+            });
+        };
         player.update();
     }
 
@@ -149,9 +167,27 @@ var Engine = (function(global) {
         /* Loop through all of the objects within the allEnemies array and call
          * the render function you have defined.
          */
-        allEnemies.forEach(function(enemy) {
-            enemy.render();
-        });
+        if (score < 1) {
+            for (i = 0; i < 3; i++) {
+                allEnemies[i].render();
+            };
+        } else if (score < 2) {
+            for (i = 0; i < 4; i++) {
+                allEnemies[i].render();
+            };
+        } else if (score < 3) {
+            for (i = 0; i < 5; i++) {
+                allEnemies[i].render();
+            };
+        } else if (score < 4) {
+            for (i = 0; i < 7; i++) {
+                allEnemies[i].render();
+            };
+        } else {
+            allEnemies.forEach(function (enemy) {
+                enemy.render();
+            });
+        };
 
         player.render();
     }
@@ -173,6 +209,7 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
+        'images/enemy-bug-right.png',
         'images/char-boy.png',
         'images/char-cat-girl.png',
         'images/char-horn-girl.png',

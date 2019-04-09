@@ -5,11 +5,15 @@ body {
 .score-panel {
     align-self: center;
     text-align: center;
-    width: 505px;
+    /*width: 505px;*/
+}
+.score-panel h1{
+    margin-right: 50px;
 }
 
     .score-panel li {
         display: inline-block;
+        vertical-align: middle;
         margin: 0;
         padding: 0;
     }
@@ -19,4 +23,8 @@ body {
         padding:0;
         max-height: 100px;
         max-width: 100px;
+    }
+
+    .score-panel .hide {
+        visibility: hidden;
     }
