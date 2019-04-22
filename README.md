@@ -27,7 +27,7 @@ The goal is to progress your character to the water. Upon reaching the water the
 
 - speed for all enemies randomly set when they go back to the beginning of their row.
 
-### Edits from Udacity's explicit insructions
+#### Edits from Udacity's explicit insructions
 
 - Created an inverted version of the Enemy png to allow enemies to go both directions.
 
